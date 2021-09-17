@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         color: "#be2f0c"
     },
     boton: {
-        backgroundColor: "#460906"
+        backgroundColor: "#be2f0c"
     }
 
 })

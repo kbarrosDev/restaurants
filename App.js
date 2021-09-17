@@ -1,5 +1,8 @@
 
 import React from 'react';
+import { LogBox } from 'react-native';
+
+LogBox.ignoreAllLogs
 
 import Navigation from './navigations/Navigation';
 import { NavigationContainer } from '@react-navigation/native';

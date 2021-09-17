@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavigationContainer, StackActions } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Restaurants from '../screens/Restaurants'
+import Restaurants from '../screens/restaurants/Restaurants'
 import Account from '../screens/account/Account'
 
 import Favorites from '../screens/Favorites'
@@ -9,6 +9,7 @@ import TopRestaurants from '../screens/TopRestaurants'
 import Search from '../screens/Search'
 import { Icon } from 'react-native-elements'
 import AccountStack from './AccountStack'
+import RestaurantsStack from './RestaurantsStack'
 
 const Tab = createBottomTabNavigator()
 
@@ -103,8 +104,8 @@ export default function Navigation() {
             >
                 <Tab.Screen 
                     name = "restaurants"
-                    component = {Restaurants}
-                    options={{title: "Pedidos"}}
+                    component = {RestaurantsStack}
+                    options={{title: '',tabBarLabel: 'Pedidos',headerShown: false}}
                     
                 />
                 <Tab.Screen 
